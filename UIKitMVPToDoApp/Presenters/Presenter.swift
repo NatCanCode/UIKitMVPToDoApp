@@ -19,8 +19,22 @@ class Presenter {
         let text = "Hey"
         presenterProtocol?.getLabelTextProtocol(text: text)
     }
+
+    func getSentences() {
+        let sentences = [
+            "One",
+            "Two",
+            "Three",
+            "Four",
+            "Five",
+            "Six",
+            "Seven"
+        ]
+        presenterProtocol?.getSentencesProtocol(sentences: sentences)
+    }
 }
 
 protocol PresenterProtocol {
     func getLabelTextProtocol(text: String)
+    func getSentencesProtocol(sentences: [String])
 }
