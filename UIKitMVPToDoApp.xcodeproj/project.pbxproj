@@ -16,6 +16,8 @@
 		ACFE1B602B7E3333006CD597 /* UIKitMVPToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B5F2B7E3333006CD597 /* UIKitMVPToDoAppTests.swift */; };
 		ACFE1B6A2B7E3333006CD597 /* UIKitMVPToDoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B692B7E3333006CD597 /* UIKitMVPToDoAppUITests.swift */; };
 		ACFE1B6C2B7E3333006CD597 /* UIKitMVPToDoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B6B2B7E3333006CD597 /* UIKitMVPToDoAppUITestsLaunchTests.swift */; };
+		ACFE1B792B7E34FF006CD597 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B782B7E34FF006CD597 /* Presenter.swift */; };
+		ACFE1B7E2B7E41B6006CD597 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B7D2B7E41B6006CD597 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		ACFE1B652B7E3333006CD597 /* UIKitMVPToDoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitMVPToDoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFE1B692B7E3333006CD597 /* UIKitMVPToDoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitMVPToDoAppUITests.swift; sourceTree = "<group>"; };
 		ACFE1B6B2B7E3333006CD597 /* UIKitMVPToDoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitMVPToDoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACFE1B782B7E34FF006CD597 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		ACFE1B7D2B7E41B6006CD597 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,9 @@
 			children = (
 				ACFE1B482B7E3330006CD597 /* AppDelegate.swift */,
 				ACFE1B4A2B7E3330006CD597 /* SceneDelegate.swift */,
-				ACFE1B4C2B7E3330006CD597 /* ViewController.swift */,
-				ACFE1B4E2B7E3330006CD597 /* Main.storyboard */,
+				ACFE1B7C2B7E352B006CD597 /* Model */,
+				ACFE1B7B2B7E351E006CD597 /* Views */,
+				ACFE1B7A2B7E350D006CD597 /* Presenters */,
 				ACFE1B512B7E3332006CD597 /* Assets.xcassets */,
 				ACFE1B532B7E3332006CD597 /* LaunchScreen.storyboard */,
 				ACFE1B562B7E3332006CD597 /* Info.plist */,
@@ -125,6 +130,31 @@
 				ACFE1B6B2B7E3333006CD597 /* UIKitMVPToDoAppUITestsLaunchTests.swift */,
 			);
 			path = UIKitMVPToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		ACFE1B7A2B7E350D006CD597 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				ACFE1B782B7E34FF006CD597 /* Presenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		ACFE1B7B2B7E351E006CD597 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACFE1B4C2B7E3330006CD597 /* ViewController.swift */,
+				ACFE1B7D2B7E41B6006CD597 /* CustomCell.swift */,
+				ACFE1B4E2B7E3330006CD597 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACFE1B7C2B7E352B006CD597 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +290,8 @@
 			files = (
 				ACFE1B4D2B7E3330006CD597 /* ViewController.swift in Sources */,
 				ACFE1B492B7E3330006CD597 /* AppDelegate.swift in Sources */,
+				ACFE1B7E2B7E41B6006CD597 /* CustomCell.swift in Sources */,
+				ACFE1B792B7E34FF006CD597 /* Presenter.swift in Sources */,
 				ACFE1B4B2B7E3330006CD597 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
