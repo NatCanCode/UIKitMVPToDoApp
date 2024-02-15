@@ -8,7 +8,6 @@
 import UIKit
 
 class ViewController: UIViewController, PresenterProtocol {
-
 //    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,10 +24,10 @@ class ViewController: UIViewController, PresenterProtocol {
         presenter.getSentences()
     }
 
-    func getLabelTextProtocol(text: String) {
-        // Update UI
-//        label.text = text
-    }
+//    func getLabelTextProtocol(text: String) {
+//        // Update UI
+////        label.text = text
+//    }
 
     func getSentencesProtocol(sentences: [String]) {
         // Update UI
