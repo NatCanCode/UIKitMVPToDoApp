@@ -20,9 +20,6 @@
 		ACFE1B7E2B7E41B6006CD597 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B7D2B7E41B6006CD597 /* CustomCell.swift */; };
 		ACFE1B802B7E5D19006CD597 /* RecordTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B7F2B7E5D19006CD597 /* RecordTask.swift */; };
 		ACFE1B822B7E612A006CD597 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B812B7E612A006CD597 /* Service.swift */; };
-		ACFE1B842B7F5FBC006CD597 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B832B7F5FBC006CD597 /* DeleteButton.swift */; };
-		ACFE1B852B7F5FBC006CD597 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B832B7F5FBC006CD597 /* DeleteButton.swift */; };
-		ACFE1B862B7F5FBC006CD597 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE1B832B7F5FBC006CD597 /* DeleteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +57,6 @@
 		ACFE1B7D2B7E41B6006CD597 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		ACFE1B7F2B7E5D19006CD597 /* RecordTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTask.swift; sourceTree = "<group>"; };
 		ACFE1B812B7E612A006CD597 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		ACFE1B832B7F5FBC006CD597 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,7 +149,6 @@
 			children = (
 				ACFE1B4C2B7E3330006CD597 /* ViewController.swift */,
 				ACFE1B7D2B7E41B6006CD597 /* CustomCell.swift */,
-				ACFE1B832B7F5FBC006CD597 /* DeleteButton.swift */,
 				ACFE1B4E2B7E3330006CD597 /* Main.storyboard */,
 			);
 			path = Views;
@@ -303,7 +298,6 @@
 				ACFE1B822B7E612A006CD597 /* Service.swift in Sources */,
 				ACFE1B492B7E3330006CD597 /* AppDelegate.swift in Sources */,
 				ACFE1B7E2B7E41B6006CD597 /* CustomCell.swift in Sources */,
-				ACFE1B842B7F5FBC006CD597 /* DeleteButton.swift in Sources */,
 				ACFE1B792B7E34FF006CD597 /* Presenter.swift in Sources */,
 				ACFE1B802B7E5D19006CD597 /* RecordTask.swift in Sources */,
 				ACFE1B4B2B7E3330006CD597 /* SceneDelegate.swift in Sources */,
@@ -314,7 +308,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFE1B852B7F5FBC006CD597 /* DeleteButton.swift in Sources */,
 				ACFE1B602B7E3333006CD597 /* UIKitMVPToDoAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +318,6 @@
 			files = (
 				ACFE1B6A2B7E3333006CD597 /* UIKitMVPToDoAppUITests.swift in Sources */,
 				ACFE1B6C2B7E3333006CD597 /* UIKitMVPToDoAppUITestsLaunchTests.swift in Sources */,
-				ACFE1B862B7F5FBC006CD597 /* DeleteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

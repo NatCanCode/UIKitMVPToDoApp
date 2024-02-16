@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import UIKitMVPToDoApp
 
 final class UIKitMVPToDoAppUITests: XCTestCase {
 

@@ -50,9 +50,8 @@ class Presenter {
                     // Handle error if needed
                 } else {
                     print("Task deleted successfully")
-                    // Perform any UI updates or other actions after successful deletion
-                    // For example, you might want to refresh the task list after deletion
-                    self.getTasks()
+                    // Perform UI updates after successful deletion
+                    self.getTasks() // Refresh task list after deletion
                 }
             }
         }
@@ -63,4 +62,5 @@ protocol PresenterProtocol {
 //    func getLabelTextProtocol(text: String)
 //    func getSentencesProtocol(sentences: [String])
     func getAllTasksProtocol(tasks: [RecordTask])
+    func deleteTaskProtocol(recordId: RecordTask)
 }

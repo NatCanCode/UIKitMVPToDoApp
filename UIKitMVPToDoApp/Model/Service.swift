@@ -79,7 +79,7 @@ extension Service {
                 return
             }
 
-            // Successfully deleted the record
+            // Deleted record
             completion(nil)
         }
 
