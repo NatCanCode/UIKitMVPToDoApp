@@ -40,9 +40,10 @@ class ViewController: UIViewController, PresenterProtocol {
 
     func getAllTasksProtocol(tasks: [RecordTask]) {
         // Update UI
-//        label.text = text
         self.tasks = tasks
-        tableView.reloadData()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
 }
 

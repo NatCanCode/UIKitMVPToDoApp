@@ -4,11 +4,13 @@
 //
 //  Created by N N on 15/02/2024.
 // Airtable token: "pat34EltLrldSOB1D.29918bf2298890e1c3c724f7edcf2deabfe38ab4822f863c0c4b9b8948411289"
+// Url: "https://api.airtable.com/v0/appEdnbPhnWCd5Tsx/To%20do?maxRecords=3&view=Grid%20view"
+// Carefull to select READ and WRITE when generating the Airtable token
 
 import UIKit
 
 class Service {
-    private let url = URL(string: "https://api.airtable.com/v0/appEdnbPhnWCd5Tsx/To%20do?maxRecords=3&view=Grid%20view")
+    private let url = URL(string: "https://api.airtable.com/v0/appEdnbPhnWCd5Tsx/To%20do")
     private let token = "pat34EltLrldSOB1D.29918bf2298890e1c3c724f7edcf2deabfe38ab4822f863c0c4b9b8948411289"
 
     func getRecords(completion: @escaping ([RecordTask]?, Error?) -> Void) {
@@ -24,6 +26,12 @@ class Service {
                 completion(nil, error)
                 return
             }
+
+            // Test Json string in console
+            if let jsonString = String(data: data, encoding: .utf8) {
+                print("Received JSON: \(jsonString)")
+            }
+
 
             guard let responseHttp = response as? HTTPURLResponse else {
                 completion(nil, nil)
